@@ -59,17 +59,6 @@ export default function EvaluationControls({
 
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">
-            Select Model Run
-          </label>
-          <select className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm">
-            <option>Model Run 1</option>
-            <option>Model Run 2</option>
-            <option>Model Run 3</option>
-          </select>
-        </div>
-
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">
             Overlap Threshold (IoU): {Math.round(iouThreshold * 100)}%
           </label>
           <input
