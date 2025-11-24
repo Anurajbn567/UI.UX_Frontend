@@ -48,12 +48,18 @@ export default function EvaluationControls({
       <div className="p-4 space-y-6">
         <div>
           <h3 className="text-sm font-medium text-gray-700 mb-3">Upload Data</h3>
-          <button className="w-full px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm flex items-center justify-center gap-2">
-            <Upload className="w-4 h-4" />
-            Upload ZIP (Images + XML)
-          </button>
+          <div className="space-y-2">
+            <button className="w-full px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm flex items-center justify-center gap-2">
+              <Upload className="w-4 h-4" />
+              Upload ZIP (Images + XML)
+            </button>
+            <button className="w-full px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm flex items-center justify-center gap-2">
+              <Upload className="w-4 h-4" />
+              Upload ZIP (Images + YOLO)
+            </button>
+          </div>
           <div className="text-xs text-gray-600 p-2 bg-gray-50 rounded mt-2">
-            Upload ZIP containing images and annotations XML
+            Upload ZIP containing images and annotations (XML or YOLO text format)
           </div>
         </div>
 
